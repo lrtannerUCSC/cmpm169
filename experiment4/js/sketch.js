@@ -75,8 +75,8 @@ var composeMode = false;
 
 
 function setup() {
-  createCanvas(600, 600);
-
+  let canvas = createCanvas(600, 600);
+  canvas.parent('canvas-container');
   // Create oscillators
   oscX = new p5.Oscillator('sine');
   oscY = new p5.Oscillator('sine');
