@@ -72,7 +72,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 600);
+  let canvas = createCanvas(600, 600);
+  canvas.parent('canvas-container');
   imageMode(CENTER);
   // set the current shape to the first in the array
   currentShape = shapes[0];
