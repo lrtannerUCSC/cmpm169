@@ -45,8 +45,8 @@ let followCamera = false;
 // x    Removes all orbs
 //==================================================//
 function setup() {
-  createCanvas(800, 600, WEBGL);
-
+  const canvas = createCanvas(800, 600, WEBGL);
+  canvas.parent('canvas-container');
   // Create sliders and labels
   createSlidersAndLabels();
 
